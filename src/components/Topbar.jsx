@@ -1,29 +1,32 @@
 export default function Topbar() {
   return (
-    <div className="flex justify-between items-center mb-8">
-      <div>
-        <h1 className="text-2xl font-bold">Putra Setyonugroho</h1>
-        <span className="text-zinc-400 text-sm">Backend & Devops | Linux & Infrastructure Enthusiast</span>
+    <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-8 gap-4 md:gap-0">
+      <div className="flex flex-col items-start">
+        <h1 className="text-xl sm:text-2xl font-bold">Putra Setyonugroho</h1>
+        <span className="text-zinc-400 text-xs sm:text-sm">
+          Backend & Devops | Linux & Infrastructure Enthusiast
+        </span>
       </div>
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center mt-2 md:mt-0">
         <a
-          href="/cv-putra-setyonugroho.pdf"
+          href="/CV_Putra-Setyonugroho.pdf"
           download
-          className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded flex items-center"
+          className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-3 sm:px-4 rounded flex items-center text-sm sm:text-base w-full justify-center"
           aria-label="Download CV"
         >
           <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"/>
           </svg>
-          Download CV
+          <span className="hidden xs:inline">Download CV</span>
+          <span className="inline xs:hidden">CV</span>
         </a>
       </div>
-      <div className="flex flex-row">
+      <div className="flex flex-wrap md:flex-nowrap flex-row mt-2 md:mt-0">
         <a
           href="https://github.com/putrastyo"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-zinc-800 hover:bg-zinc-700 text-white font-semibold py-2 px-4 rounded-l flex items-center"
+          className="bg-zinc-800 hover:bg-zinc-700 text-white font-semibold py-2 px-3 sm:px-4 rounded-l flex items-center text-sm sm:text-base"
           aria-label="GitHub"
         >
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -34,7 +37,7 @@ export default function Topbar() {
           href="https://linkedin.com/in/putrasetyo"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-2 px-4 flex items-center -ml-px"
+          className="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-2 px-3 sm:px-4 flex items-center -ml-px text-sm sm:text-base"
           aria-label="LinkedIn"
         >
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -42,10 +45,10 @@ export default function Topbar() {
           </svg>
         </a>
         <a
-          href="https://instagram.com/putrasetyo"
+          href="https://instagram.com/putrastyo_"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 px-4 flex items-center -ml-px"
+          className="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 px-3 sm:px-4 flex items-center -ml-px text-sm sm:text-base"
           aria-label="Instagram"
         >
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -53,10 +56,10 @@ export default function Topbar() {
           </svg>
         </a>
         <a
-          href="https://twitter.com/putrasetyo"
+          href="https://x.com/ptr_styo"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-r flex items-center -ml-px"
+          className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-3 sm:px-4 rounded-r flex items-center -ml-px text-sm sm:text-base"
           aria-label="Twitter"
         >
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
