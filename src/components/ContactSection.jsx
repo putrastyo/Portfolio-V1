@@ -6,10 +6,10 @@ export default function ContactSection() {
         Feel free to reach out via email:
       </p>
       <a
-        href="mailto:hello@ayuwoki.my.id"
+        href="mailto:me.putrasetyo@gmail.com"
         className="text-blue-400 hover:underline text-lg font-medium break-all"
       >
-        hello@ayuwoki.my.id
+        me.putrasetyo@gmail.com
       </a>
     </section>
   );

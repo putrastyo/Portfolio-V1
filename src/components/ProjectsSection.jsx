@@ -18,7 +18,6 @@ export default function ProjectsSection() {
             <ul className="flex flex-row flex-wrap gap-2 text-zinc-400 text-sm list-none m-0 p-0">
               <li className="after:content-['•'] after:mx-2 last:after:content-['']">React</li>
               <li className="after:content-['•'] after:mx-2 last:after:content-['']">Tailwind CSS</li>
-              <li>Vite</li>
             </ul>
           </div>
           <div className="flex flex-row gap-4 mt-auto">
@@ -51,14 +50,15 @@ export default function ProjectsSection() {
             <ul className="flex flex-row flex-wrap gap-2 text-zinc-400 text-sm list-none m-0 p-0">
               <li className="after:content-['•'] after:mx-2 last:after:content-['']">React</li>
               <li className="after:content-['•'] after:mx-2 last:after:content-['']">Express.js</li>
-              <li className="after:content-['•'] after:mx-2 last:after:content-['']">Python (AI)</li>
+              <li className="after:content-['•'] after:mx-2 last:after:content-['']">FastAPI (Python)</li>
               <li className="after:content-['•'] after:mx-2 last:after:content-['']">MongoDB</li>
+              <li className="after:content-['•'] after:mx-2 last:after:content-['']">PostgreSQL</li>
               <li>Docker</li>
             </ul>
           </div>
           <div className="flex flex-row gap-4 mt-auto">
             <a
-              href="https://github.com/putrastyo/diagnify"
+              href="https://github.com/IT-FEST-2025"
               target="_blank"
               rel="noopener noreferrer"
               className="text-green-400 hover:underline text-sm font-medium"
@@ -66,7 +66,7 @@ export default function ProjectsSection() {
               GitHub Repo
             </a>
             <a
-              href="https://diagnify.putrasetyo.dev"
+              href="https://diagnify.site/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:underline text-sm font-medium"
@@ -78,29 +78,20 @@ export default function ProjectsSection() {
 
         {/* Clinico - Klinik Online */}
         <div className="bg-zinc-700 rounded-lg p-4 shadow flex flex-col">
-          <h3 className="font-semibold text-lg mb-2 text-white">Clinico - Online Clinic</h3>
+          <h3 className="font-semibold text-lg mb-2 text-white">Clinico - Online Clinic (Malaysia)</h3>
           <p className="text-zinc-300 mb-2">
             Online clinic management system for appointments, consultations, and payments. Multi-role dashboard for doctors, patients, and staff.
           </p>
           <div className="mb-2 flex items-center gap-2 flex-wrap">
             <ul className="flex flex-row flex-wrap gap-2 text-zinc-400 text-sm list-none m-0 p-0">
               <li className="after:content-['•'] after:mx-2 last:after:content-['']">Laravel</li>
-              <li className="after:content-['•'] after:mx-2 last:after:content-['']">Vue.js</li>
+              <li className="after:content-['•'] after:mx-2 last:after:content-['']">React</li>
               <li className="after:content-['•'] after:mx-2 last:after:content-['']">MySQL</li>
-              <li>JWT Auth</li>
             </ul>
           </div>
           <div className="flex flex-row gap-4 mt-auto">
             <a
-              href="https://github.com/putrastyo/clinico"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-green-400 hover:underline text-sm font-medium"
-            >
-              GitHub Repo
-            </a>
-            <a
-              href="https://clinico.putrasetyo.dev"
+              href="https://clinico.site/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:underline text-sm font-medium"
@@ -112,30 +103,20 @@ export default function ProjectsSection() {
 
         {/* MPSOnline - School Management */}
         <div className="bg-zinc-700 rounded-lg p-4 shadow flex flex-col">
-          <h3 className="font-semibold text-lg mb-2 text-white">MPSOnline - School Management</h3>
+          <h3 className="font-semibold text-lg mb-2 text-white">MPSOnline - School Management (Malaysia)</h3>
           <p className="text-zinc-300 mb-2">
             Platform for managing school operations: academics, payments, and recommendations. Microservices and multi-database architecture.
           </p>
           <div className="mb-2 flex items-center gap-2 flex-wrap">
             <ul className="flex flex-row flex-wrap gap-2 text-zinc-400 text-sm list-none m-0 p-0">
-              <li className="after:content-['•'] after:mx-2 last:after:content-['']">NestJS</li>
-              <li className="after:content-['•'] after:mx-2 last:after:content-['']">React</li>
-              <li className="after:content-['•'] after:mx-2 last:after:content-['']">PostgreSQL</li>
-              <li className="after:content-['•'] after:mx-2 last:after:content-['']">Redis</li>
-              <li>Docker Compose</li>
+              <li className="after:content-['•'] after:mx-2 last:after:content-['']">Laravel</li>
+              <li className="after:content-['•'] after:mx-2 last:after:content-['']">MySQL</li>
+              <li>Docker</li>
             </ul>
           </div>
           <div className="flex flex-row gap-4 mt-auto">
             <a
-              href="https://github.com/putrastyo/mpsonline"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-green-400 hover:underline text-sm font-medium"
-            >
-              GitHub Repo
-            </a>
-            <a
-              href="https://mpsonline.putrasetyo.dev"
+              href="https://mpsonline.cloud/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:underline text-sm font-medium"

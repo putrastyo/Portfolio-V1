@@ -1,4 +1,28 @@
-import { Code, Server, Cpu, Wrench } from "lucide-react";
+import { Cpu } from "lucide-react";
+
+const techStacks = [
+  { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Vue.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" },
+  { name: "TailwindCSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" },
+  { name: "ShadCN", logo: "https://ui.shadcn.com/favicon.ico" },
+  { name: "Laravel", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" },
+  { name: "NestJS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg" },
+  { name: "Express", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+  { name: "FastAPI", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
+  { name: "Golang", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" },
+  { name: "PostgreSQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+  { name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+  { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+  { name: "Redis", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
+  { name: "Docker", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+  { name: "Nginx", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" },
+  { name: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+  { name: "RabbitMQ", logo: "https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg" },
+  { name: "Grafana", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" },
+  { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "Bun", logo: "https://bun.sh/logo@2x.png" },
+  { name: "Linux", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" },
+];
 
 export default function SkillsSection() {
   return (
@@ -8,103 +32,25 @@ export default function SkillsSection() {
         Skills Overview
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-        {/* Bahasa Pemrograman */}
-        <div className="bg-zinc-800/60 hover:bg-zinc-800 transition-all p-6 rounded-xl shadow-md">
-          <h3 className="text-lg font-semibold flex items-center mb-4 text-purple-300">
-            <Code className="w-5 h-5 mr-2" /> Programming Language
-          </h3>
-          <ul className="list-disc list-inside ml-4 text-sm text-zinc-300 space-y-1">
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>PHP</li>
-            <li>Python</li>
-            <li>Go (Golang)</li>
-          </ul>
-        </div>
-
-        {/* Framework / Library */}
-        <div className="bg-zinc-800/60 hover:bg-zinc-800 transition-all p-6 rounded-xl shadow-md">
-          <h3 className="text-lg font-semibold flex items-center mb-4 text-blue-300">
-            <Server className="w-5 h-5 mr-2" /> Framework / Library
-          </h3>
-          <div className="space-y-2 text-sm">
-            <div>
-              <span className="font-semibold text-zinc-50">Frontend:</span>
-              <ul className="list-disc list-inside ml-4 text-zinc-300">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Vue.js</li>
-                <li>Tailwind CSS</li>
-              </ul>
-            </div>
-            <div>
-              <span className="font-semibold text-zinc-50">Backend:</span>
-              <ul className="list-disc list-inside ml-4 text-zinc-300">
-                <li>Express.js</li>
-                <li>NestJS</li>
-                <li>Laravel</li>
-                <li>FastAPI (Python)</li>
-                <li>Gin, Fiber, Echo (Golang)</li>
-              </ul>
-            </div>
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6 justify-items-center">
+        {techStacks.map((tech) => (
+          <div
+            key={tech.name}
+            className="flex flex-col items-center justify-center group hover:scale-110 transition-transform"
+            title={tech.name}
+          >
+            <img
+              src={tech.logo}
+              alt={tech.name}
+              width={48}
+              height={48}
+              className="w-12 h-12 object-contain"
+            />
+            <p className="text-xs mt-2 opacity-70 group-hover:opacity-100 transition-opacity">
+              {tech.name}
+            </p>
           </div>
-        </div>
-
-        {/* Database */}
-        <div className="bg-zinc-800/60 hover:bg-zinc-800 transition-all p-6 rounded-xl shadow-md">
-          <h3 className="text-lg font-semibold flex items-center mb-4 text-green-300">
-            <Wrench className="w-5 h-5 mr-2" /> Database
-          </h3>
-          <ul className="list-disc list-inside ml-4 text-sm text-zinc-300 space-y-1">
-            <li>PostgreSQL</li>
-            <li>MySQL</li>
-            <li>MongoDB</li>
-            <li>Redis</li>
-            <li>Firebase</li>
-          </ul>
-        </div>
-
-        {/* Automation & DevOps */}
-        <div className="bg-zinc-800/60 hover:bg-zinc-800 transition-all p-6 rounded-xl shadow-md">
-          <h3 className="text-lg font-semibold flex items-center mb-4 text-yellow-300">
-            <Server className="w-5 h-5 mr-2" /> Automation & DevOps
-          </h3>
-          <ul className="list-disc list-inside ml-4 text-sm text-zinc-300 space-y-1">
-            <li>Docker</li>
-            <li>Nginx</li>
-            <li>GitHub Actions & Gitlab CI</li>
-            <li>Bash Scripting</li>
-            <li>Jenkins</li>
-          </ul>
-        </div>
-
-        {/* Testing & QA */}
-        <div className="bg-zinc-800/60 hover:bg-zinc-800 transition-all p-6 rounded-xl shadow-md">
-          <h3 className="text-lg font-semibold flex items-center mb-4 text-pink-300">
-            <Wrench className="w-5 h-5 mr-2" /> Testing & QA
-          </h3>
-          <ul className="list-disc list-inside ml-4 text-sm text-zinc-300 space-y-1">
-            <li>Jest (JavaScript)</li>
-            <li>PHPUnit (Laravel)</li>
-            <li>Go test (Golang)</li>
-            <li>Postman (API testing)</li>
-            <li>OWASP ZAP, Burp Suite (security testing)</li>
-          </ul>
-        </div>
-
-        {/* Bonus */}
-        <div className="bg-zinc-800/60 hover:bg-zinc-800 transition-all p-6 rounded-xl shadow-md">
-          <h3 className="text-lg font-semibold flex items-center mb-4 text-cyan-300">
-            <Code className="w-5 h-5 mr-2" /> Bonus
-          </h3>
-          <ul className="list-disc list-inside ml-4 text-sm text-zinc-300 space-y-1">
-            <li>RESTful API Design</li>
-            <li>Clean Architecture / Repository Pattern</li>
-            <li>Swagger / OpenAPI</li>
-            <li>CI/CD pipeline & containerized deployment</li>
-          </ul>
-        </div>
+        ))}
       </div>
     </section>
   );

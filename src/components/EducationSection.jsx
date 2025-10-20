@@ -25,7 +25,7 @@ export default function EducationSection() {
               <div className="space-y-2 text-xs sm:text-sm text-zinc-300">
                 <div className="flex items-center gap-2">
                   <Award className="w-3 h-3 sm:w-4 sm:h-4 text-yellow-400 flex-shrink-0" />
-                  <span>GPA: 3.78/4.00</span>
+                  <span>Last GPA: 3.78/4.00</span>
                 </div>
                 <div>
                   <span className="font-semibold text-zinc-50">Relevant Coursework:</span>
